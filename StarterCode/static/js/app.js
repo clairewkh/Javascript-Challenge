@@ -4,12 +4,12 @@ var tableData = data;
 // YOUR CODE HERE
 var tbody = d3.select("tbody");
 
-// forEach loop that populates table
+// forEach loop to generate table
 tableData.forEach((i) =>
 {
-    // row is created for table
-    var row = tbody.append('tr');
     
+    var row = tbody.append('tr');
+
     row.append('td').text(i.datetime);
     row.append('td').text(i.city);
     row.append('td').text(i.state);
