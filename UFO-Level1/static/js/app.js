@@ -6,7 +6,7 @@ console.log(tableData)
 var tbody = d3.select("tbody");
 var form = d3.select("#form");
 var table = d3.select("table");
-table.attr("class", "table table-striped");
+
 // forEach loop to generate table
 tableData.forEach(i =>
 {
@@ -48,8 +48,6 @@ function runEnter() {
 //Filter
     var filteredData = tableData.filter(j => j.datetime === inputValue);
     console.log(filteredData);
-
-// remove any children from the list to
     tbody.html("");
 
 //Print out data based on filtered
